@@ -131,7 +131,25 @@ textarea { min-height: 140px; resize: vertical; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .site-footer .legal { width: 100%; border-top: 1px solid rgba(246, 244, 238, 0.2); padding-top: 20px; margin-top: 8px; font-size: 0.88rem; }
 
+.table-wrap { background: var(--k-linen); border-radius: 18px; padding: 8px 20px; margin-top: 36px; overflow-x: auto; }
+.packages { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.packages th, .packages td { padding: 14px 10px; text-align: center; vertical-align: middle; border-bottom: 1px solid var(--k-mist); }
+.packages tbody tr:last-child th, .packages tbody tr:last-child td { border-bottom: 0; }
+.packages thead th { font-family: var(--k-font-display); font-weight: 600; font-size: 1.3rem; vertical-align: bottom; border-bottom: 2px solid var(--k-deep); }
+.packages thead td { width: 28%; border-bottom: 2px solid var(--k-deep); }
+.packages .price { display: block; margin: 4px 0 0; font-size: 1.7rem; }
+.packages .price span { display: block; }
+.packages tbody th { text-align: left; font-weight: 500; }
+.packages .yes { color: var(--k-river); font-size: 1.5rem; font-weight: 600; line-height: 1; }
+.packages .no { color: var(--k-deep); opacity: 0.55; }
 @media (max-width: 820px) {
+  .table-wrap { padding: 4px 8px; }
+  .packages { font-size: 0.85rem; }
+  .packages th, .packages td { padding: 10px 4px; }
+  .packages thead th { font-size: 0.8rem; }
+  .packages thead td { width: 25%; }
+  .packages .price { font-size: 1.15rem; }
+  .packages .price span { font-size: 0.75rem; }
   body { font-size: 17px; }
   section { padding: 52px 0; }
   .hero .wrap, .about .wrap, .contact .wrap, .band .wrap { grid-template-columns: 1fr; }
