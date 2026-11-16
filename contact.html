@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Kintrist</title>
+  <meta name="description" content="Schedule a first call with Kintrist, family advocacy in the Tri-Cities, WA.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="lockup" href="index.html" aria-label="Kintrist, Family Advocate: home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true">
+  <circle cx="46" cy="60" r="32" fill="none" stroke="#3F6E8C" stroke-width="10"/>
+  <circle cx="80" cy="60" r="22" fill="none" stroke="#9DAE8A" stroke-width="10"/>
+  <path d="M70.94 39.95 A32 32 0 0 1 70.94 80.05 A22 22 0 0 1 70.94 39.95 Z" fill="#6E8E8B"/>
+  <path d="M71 37 Q65.5 60 71.5 91" stroke="#23404F" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+</svg>
+        <span><span class="lockup-name">Kintrist</span><span class="lockup-desc">Family Advocate</span></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="button" href="contact.html">Schedule a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk about your parent.</h1>
+        <p class="lead">The first call is a conversation, not a commitment. Tell us a little about your family and we'll be in touch to set up a time.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="wrap">
+        <div>
+          <h2>Reach us</h2>
+          <p><strong>Email</strong><br><a href="mailto:hillary@kintrist.com">hillary@kintrist.com</a></p>
+          <p><strong>Service area</strong><br>Kennewick, Pasco, Richland and communities within about 30 to 40 miles of the Tri-Cities, Washington.</p>
+          <p class="note">In an emergency, call 911. Kintrist is not an emergency service.</p>
+        </div>
+        <div class="card">
+          <form id="contact-form" novalidate>
+            <label>Your name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>Phone (optional)
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>Where does your parent live?
+              <input type="text" name="city" placeholder="City or town">
+            </label>
+            <label>How can we help?
+              <textarea name="message"></textarea>
+            </label>
+            <p class="note">Please don't include medical details here. We can talk about those on the call.</p>
+            <div><button class="button" type="submit">Send</button></div>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // TODO before launch: connect this form to a mail service (see README).
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var s = document.getElementById('form-status');
+        s.hidden = false;
+        s.textContent = 'This form is not connected yet, so your message was not sent. For now, please email hillary@kintrist.com.';
+      });
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <a class="lockup" href="index.html" aria-label="Kintrist home">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true">
+  <circle cx="46" cy="60" r="32" fill="none" stroke="#F6F4EE" stroke-width="8"/>
+  <circle cx="80" cy="60" r="22" fill="none" stroke="#9DAE8A" stroke-width="8"/>
+  <path d="M70.94 39.95 A32 32 0 0 1 70.94 80.05 A22 22 0 0 1 70.94 39.95 Z" fill="#6E8E8B"/>
+  <path d="M68.6 54 L62.5 49 M68.3 66 L60.8 60.6 M69 58 L75.5 52.5 M68.8 70 L74.5 65.5" stroke="#23404F" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M71 37 Q65.5 60 71.5 91" stroke="#F6F4EE" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+</svg>
+          <span><span class="lockup-name">Kintrist</span><span class="lockup-desc">Family Advocate</span></span>
+        </a>
+        <p class="tagline">Safe, organized, and never alone.</p>
+      </div>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Hillary</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+      <div>
+        <p>Serving the Tri-Cities, Washington<br>and nearby communities</p>
+        <p><a href="mailto:hillary@kintrist.com">hillary@kintrist.com</a></p>
+      </div>
+      <p class="legal">&copy; 2026 Kintrist. Kintrist provides advocacy and coordination. It does not provide medical or hands-on care.</p>
+    </div>
+  </footer>
+</body>
+</html>

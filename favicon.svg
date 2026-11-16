@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Kintrist">
+  <rect width="120" height="120" rx="28" fill="#23404F"/>
+  <circle cx="46" cy="60" r="30" fill="none" stroke="#F6F4EE" stroke-width="15"/>
+  <circle cx="82" cy="60" r="20" fill="none" stroke="#9DAE8A" stroke-width="15"/>
+</svg>
